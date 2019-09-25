@@ -17,16 +17,6 @@ const connect = function() {
     conn.write('Name: BFS');
   });
 
-  // // move
-  // conn.on('connect', () => {
-  //   for (let i = 0; i < 4; i++) {
-  //     setTimeout(() => {
-  //       conn.write('Move: up');
-
-  //     }, i*100);
-  //   }    
-  // });
-
   // interpret incoming data as text
   conn.setEncoding('utf8');
 
