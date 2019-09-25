@@ -25,11 +25,6 @@ const handleUserInput = function(key) {
   } else if (key === "w") {
     console.log(`Key: ${key}, move up!`)
     connection.write('Move: up');
-    // for (let i = 0; i < 2; i++) {
-    //   setTimeout(() => {
-    //     connection.write('Move: up');
-    //   }, i*100);
-    // }
   } else if (key === "a") {
     console.log(`Key: ${key}, move left!`);
     connection.write('Move: left');
@@ -39,6 +34,43 @@ const handleUserInput = function(key) {
   } else if (key === "d") {
     console.log(`Key: ${key}, move right`);
     connection.write('Move: right');
+  } else if (key === "q") {
+    console.log(`Key: ${key}, Neh`);
+    connection.write('Say: Neh');
+  } else if (key === "f") {
+    console.log(`Key: ${key}, Noo`);
+    connection.write('Say: Noo');    
+  } else if (key === "e") {
+    console.log(`Key: ${key}, Sho`);
+    connection.write('Say: Sho');    
+  } else if (key === "i") {
+    console.log(`Key: ${key}, move up!`)
+    for (let i = 0; i < 3; i++) {
+      setTimeout(() => {
+        connection.write('Move: up');
+      }, i*50);
+    }
+  } else if (key === "j") {
+    console.log(`Key: ${key}, move left!`)
+    for (let i = 0; i < 3; i++) {
+      setTimeout(() => {
+        connection.write('Move: left');
+      }, i*50);
+    }
+  } else if (key === "k") {
+    console.log(`Key: ${key}, move down!`)
+    for (let i = 0; i < 3; i++) {
+      setTimeout(() => {
+        connection.write('Move: down');
+      }, i*50);
+    }
+  } else if (key === "l") {
+    console.log(`Key: ${key}, move right!`)
+    for (let i = 0; i < 3; i++) {
+      setTimeout(() => {
+        connection.write('Move: right');
+      }, i*50);
+    }
   }
 }
 
